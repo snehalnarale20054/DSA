@@ -19,7 +19,7 @@ int main()
     Node *head;
     head = NULL;
 
-    // Insert at begining
+    // Insert  a node at begining
 
     int arr[] = {2, 4, 6, 8, 10};
 
