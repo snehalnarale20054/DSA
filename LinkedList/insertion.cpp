@@ -49,3 +49,61 @@ int main()
 
     return 0;
 }
+
+/*     Insertion at the start without using an array
+
+
+#include <iostream>
+using namespace std;
+
+class Node
+{
+public:
+    int data;
+    Node *next;
+
+    Node(int value)
+    {
+        data = value;
+        next = NULL;
+    }
+};
+
+int main()
+{
+    Node *head = NULL;
+
+    // Insert first node
+    Node *newNode = new Node(10);
+    newNode->next = head;
+    head = newNode;
+
+    // Insert another node at beginning
+    Node *newNode2 = new Node(20);
+    newNode2->next = head;
+    head = newNode2;
+
+    // Display linked list
+    Node *temp = head;
+    while (temp != NULL)
+    {
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
+
+    return 0;
+}
+*/
+
+/*
+Generic insertion-at-beginning function
+
+
+
+void insertAtBeginning(Node* &head, int value)
+{
+    Node *newNode = new Node(value);
+    newNode->next = head;
+    head = newNode;
+}
+*/
